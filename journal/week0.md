@@ -370,14 +370,6 @@ Open a support ticket and request a service limit
 
 Follow Request a Quota Increase with Service Quotas
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_EC2_50.pdf
-
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_Pending.pdf
-
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_EC2_50_Support_ticket.pdf
-
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_Resolved.pdf
-
 Cloud Technical Essays
 
     Challenges facing during AWS Cloud Project Bootcamp by Andrew Brown
