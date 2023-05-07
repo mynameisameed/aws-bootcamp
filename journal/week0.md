@@ -210,9 +210,6 @@ Use EventBridge to hookup Health Dashboard to SNS and send notification when the
 
 Follow Monitoring Amazon Health events with Amazon EventBridge
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_Health-rule-notify-1.pdf
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_EC2_health-2.pdf
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_SNS_topic-3.pdf
 
 Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
 
@@ -222,7 +219,6 @@ Review all the questions of each pillars in the Well Architected Tool (No specia
 
     Created a workload week_0_project to do this task in getting the report for my project using the Logical CI/CD pipeline Diagram
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Well_Architeched_Tool_report.pdf
 
 Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
 1. Logical Diagram
