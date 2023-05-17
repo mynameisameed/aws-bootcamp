@@ -28,8 +28,6 @@ I may need them in future, in case the I used up all the Gitpod free-tier.
 
 From the Bootcamp website, go all the way down to the cloud project - Use Starting template, Click - Use this template button, and select - Create a new respository - putting in the exact name - aws-bootcamp-cruddur-2023, check - Public, and then Click - Create repository from this template.
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Create_repository_aws-bootcamp-cruddur-2023.pdf
-
 Once the repository was created, I could see all of the template folders/files available in the repository.
 6. Create an AWS Account
 
@@ -113,7 +111,7 @@ aws sts get-caller-identity
 {
     "UserId": "XXXXXXXXXXXXXXXXXXXXX",
     "Account": "123456789012",
-    "Arn": "arn:aws:iam::123456789012:user/bobby"
+    "Arn": "arn:aws:iam::123456789012:user/sammy"
 }
 
     You can verify you have the proper info in your environment variables and they are importing properly by running
@@ -202,9 +200,9 @@ aws budgets create-budget \
 Homework Challenges
 Set MFA, IAM role
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_user_bobby_setup_MFA
+    aws-bootcamp-cruddur-2023/journal/assets/week_0_user_sammy_setup_MFA.jpg
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Role_S3Full.pdf
+    aws-bootcamp-cruddur-2023/journal/assets/week_0_Role_S3Full.jpg
 
 Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
 
