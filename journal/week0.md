@@ -149,7 +149,7 @@ aws sns list-topics
     ]
 }
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Billing_alarm_ARN.pdf
+    ![Billing Alarm](/aws-bootcamp-cruddur-2023/journal/assets/week_0_Billing_alarm_ARN.pdf)
 
     Create a SNS subscription and associate the above ARN and the email where you want the alert.
 
