@@ -166,7 +166,7 @@ Create the Cloudwatch Alarm
 
     Create an Alarm via AWS CLI
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Billing_alarm_ARN.pdf
+    !(/assets/week_0_Billing_alarm_ARN.pdf)
 
 aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.json
 
