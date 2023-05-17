@@ -223,31 +223,28 @@ Create an architectural diagram (to the best of your ability) the CI/CD logical 
 
 Link to my Logical Diagram from Lucid Chart
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png
+    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png
 
     Link to my Logical Diagram PDF file
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical diagram.pdf
+    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical diagram.pdf
 
 2. Coceptual Diagram + Conceptual Diagram on Napkin
 
     Link to my Conceptual Diagram from Lucid Chart
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual_Diagram_Lucidchart.png
+    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual_Diagram_Lucidchart.png
 
-    Link to my Conceptual Diagram PDF file
-
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual diagram.pdf
 
     Link to my Conceptual Diagram on Napkin
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual_Napkin_diagram.jpg
+    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual_Napkin_diagram.jpg
 
 3. Logical CI/CD pipeline Diagram
 
     Link to my Logical CI/CD Diagram from Lucid Chart
 
-    aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_CI_CD_diagram_Lucidchart.png
+    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_CI_CD_diagram_Lucidchart.png
 
     Link to my Logical CI/CD Diagram PDF file
 
