@@ -8,8 +8,8 @@ Once you log into your Student portal, From the Resources section, you watch all
     Proceed with setting up the following tasks that you need for this bootcamp as per the instructions given in the videos.
     Update the Checklist
 
-Required Tasks needed to complete the Homework
-1. Create a Github Account
+## Required Tasks needed to complete the Homework
+##### 1. Create a Github Account
 
 As I already have my Github Account, I did not create a new one.
 
@@ -17,25 +17,25 @@ As I already have my Github Account, I did not create a new one.
 
     Configuring two-factor authentication
 
-2. Create a Free Gitpod Account
+##### 2. Create a Free Gitpod Account
 
 This is used for Cloud Developer Environment (CDE) to work with the code, similar to Cloud9, but without spinning up an EC2 instance.
-3. I got the Gitpod Button on my Github Account.
-4. Create Gitpod Codespaces
+##### 3. I got the Gitpod Button on my Github Account.
+##### 4. Create Gitpod Codespaces
 
 I may need them in future, in case the I used up all the Gitpod free-tier.
-5. Creating Your Repository from the Github Template
+##### 5. Creating Your Repository from the Github Template
 
 From the Bootcamp website, go all the way down to the cloud project - Use Starting template, Click - Use this template button, and select - Create a new respository - putting in the exact name - aws-bootcamp-cruddur-2023, check - Public, and then Click - Create repository from this template.
 
 Once the repository was created, I could see all of the template folders/files available in the repository.
-6. Create an AWS Account
+##### 6. Create an AWS Account
 
 As I already have one, I did not create another Account.
-7. Create a Free Lucidchart Account to draw AWS Architectural diagrams
-8. Create a Free Honeycomb.io Account
-9. Create a Free Rollbar Account
-10. Install AWS CLI to launch Gitpod environment on the main branch
+##### 7. Create a Free Lucidchart Account to draw AWS Architectural diagrams
+##### 8. Create a Free Honeycomb.io Account
+##### 9. Create a Free Rollbar Account
+##### 10. Install AWS CLI to launch Gitpod environment on the main branch
 
     Follow installation instructions
 
@@ -64,7 +64,7 @@ tasks:
 
     If you run into an error doing a git push, make sure you have given Gitpod write permission to public_repo in your Github integration
 
-11. Create a new User and Generate AWS Credentials
+##### 11. Create a new User and Generate AWS Credentials
 
     From IAM Users Console, login as a root user
 
@@ -120,7 +120,7 @@ echo $AWS_ACCESS_KEY_ID
 echo $AWS_SECRET_ACCESS_KEY
 echo $AWS_DEFAULT_REGION
 
-12. Billing Setup
+##### 12. Billing Setup
 
 Billing alerts will notify the user if the AWS usage cost rises above a certain threshold.
 Enable the Billing alert
@@ -172,7 +172,7 @@ aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.js
 
     aws-bootcamp-cruddur-2023/aws/json/alarm-config.json
 
-13. Create an AWS Budget
+##### 13. Create an AWS Budget
 
     Create only 1 budget not to go over the free budget limit
 
@@ -219,17 +219,17 @@ Review all the questions of each pillars in the Well Architected Tool (No specia
 
 
 Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
-1. Logical Diagram
+### 1. Logical Diagram
 
 Link to my Logical Diagram from Lucid Chart
 
-    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png
+    ![](/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png
 
     Link to my Logical Diagram PDF file
 
-    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical diagram.pdf
+    ![](/assets/week_0_Logical diagram.pdf
 
-2. Coceptual Diagram + Conceptual Diagram on Napkin
+### 2. Coceptual Diagram + Conceptual Diagram on Napkin
 
     Link to my Conceptual Diagram from Lucid Chart
 
@@ -238,13 +238,13 @@ Link to my Logical Diagram from Lucid Chart
 
     Link to my Conceptual Diagram on Napkin
 
-    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual_Napkin_diagram.jpg
+    ![](/assets/week_0_Conceptual_Napkin_diagram.jpg
 
-3. Logical CI/CD pipeline Diagram
+### 3. Logical CI/CD pipeline Diagram
 
     Link to my Logical CI/CD Diagram from Lucid Chart
 
-    !aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_CI_CD_diagram_Lucidchart.png
+    ![](/assets/week_0_Logical_CI_CD_diagram_Lucidchart.png
 
     Link to my Logical CI/CD Diagram PDF file
 
@@ -271,7 +271,7 @@ Technical limits of EC2 that I could think of
 
     Storage: EC2 provides different types of storage options, including Elastic Block Store (EBS), instance store, and Amazon S3. Each storage type has different limits on storage capacity, IOPS, and throughput.
 
-Some service limits of EC2
+####  Some service limits of EC2
 
     Volumes: EC2 instances can attach a limited number of volumes, and each volume has a maximum size limit. This can impact the technical path if a user needs to attach more volumes or use larger volumes.
 
@@ -287,7 +287,7 @@ Some service limits of EC2
 
     Regional limitations: Some EC2 features may not be available in all AWS regions. For example, certain instance types may only be available in specific regions, and some instance types may have limited availability in certain regions.
 
-These limits can impact the technical path for technical flexibility in several ways.
+#### These limits can impact the technical path for technical flexibility in several ways.
 
 For example, if a company needs to launch a large number of instances, they may need to select an instance type that has a high number of vCPUs, and use multiple availability zones to distribute the load.
 
@@ -318,7 +318,7 @@ Technical Limits of LB:
 
     Protocol Support: Load balancers have limitations in terms of the types of protocols and traffic they can handle. For instance, some load balancers may not support certain protocols such as UDP or may have limited support for SSL/TLS protocols, which can impact the security and availability of applications that rely on these protocols.
 
-Service Limits of LB:
+#### Service Limits of LB:
 
     Cost: Load balancers are typically charged on a per-hour or per-month basis. They can be expensive, especially if you need to scale up to handle large volumes of traffic.
 
@@ -330,7 +330,7 @@ Service Limits of LB:
 
     Technical Support: Load balancers require technical expertise to set up, maintain, and troubleshoot, and organizations that lack in-house technical expertise may find it challenging to effectively use and manage load balancers.
 
-Impact on Technical Path for Technical Flexibility:
+#### Impact on Technical Path for Technical Flexibility:
 
 For example:
 
@@ -342,7 +342,7 @@ For example:
 
     Service limits can impact cost and vendor lock-in: If the cost of the load balancer is high or if it is a proprietary technology, it can limit the technical path for technical flexibility. It can be difficult to switch vendors or migrate to a different technology in the future.
 
-To address these issues, organizations can take several steps, such as:
+#### To address these issues, organizations can take several steps, such as:
 
     Conducting thorough research and testing before selecting a load balancer vendor or technology to ensure that it aligns with the organization's needs and goals.
 
@@ -354,20 +354,20 @@ To address these issues, organizations can take several steps, such as:
 
     Evaluating load balancer costs and seeking out cost-effective options that meet the organization's needs and budget.
 
-By taking these steps, organizations can effectively address the technical and service limits of load balancers and ensure that they have the technical flexibility needed to achieve their business goals.
+#### By taking these steps, organizations can effectively address the technical and service limits of load balancers and ensure that they have the technical flexibility needed to achieve their business goals.
 
 Overall, the technical and service limits of load balancers can impact the technical path for technical flexibility in a variety of ways. It is important to consider these limits when designing and implementing load balancing solutions, and to choose a load balancing solution that meets your specific requirements for capacity, latency, reliability, cost, and vendor lock-in.
 Open a support ticket and request a service limit
 
-Follow Request a Quota Increase with Service Quotas
+#### Follow Request a Quota Increase with Service Quotas
 
-Cloud Technical Essays
+##### Cloud Technical Essays
 
     Challenges facing during AWS Cloud Project Bootcamp by Andrew Brown
 
     Getting the serverless cache icon for AWS Cloud Project Bootcamp by Andrew Brown
 
-Knowledge Challenges
+##### Knowledge Challenges
 
     Security Quiz - Submitted
 
