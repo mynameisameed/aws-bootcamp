@@ -223,11 +223,11 @@ Create an architectural diagram (to the best of your ability) the CI/CD logical 
 
 Link to my Logical Diagram from Lucid Chart
 
-    ![](/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png
+    ![](journal\assets\week_0_Logical_Architectural_Diagram_Lucidchart.png)
 
     Link to my Logical Diagram PDF file
 
-    ![](/assets/week_0_Logical diagram.pdf
+    ![](/assets/week_0_Logical diagram.pdf)
 
 ### 2. Coceptual Diagram + Conceptual Diagram on Napkin
 
