@@ -233,7 +233,7 @@ Link to my Logical Diagram from Lucid Chart
 
     Link to my Conceptual Diagram from Lucid Chart
 
-    ![](/assets/week_0_Conceptual_Diagram_Lucidchart.png)
+    ![](assets/week_0_Conceptual_Diagram_Lucidchart.png)
 
 
     Link to my Conceptual Diagram on Napkin
