@@ -12,7 +12,7 @@ Once you log into your [Student portal](https://student.cloudprojectbootcamp.com
 
 ## 1. Create a Github Account 
 
-As I already have [my Github Account](https://github.com/awsmine), I did not create a new one.
+As I already have [my Github Account](https://github.com/mynameisameed), I did not create a new one.
 
   * ### 1b. Setup a MFA on my GitHub account for extra security. 
 
@@ -32,7 +32,6 @@ I may need them in future, in case the I used up all the Gitpod free-tier.
 
 From the [Bootcamp website](https://aws.cloudprojectbootcamp.com/), go all the way down to the cloud project - Use [Starting template](https://github.com/ExamProCo/aws-bootcamp-cruddur-2023), Click - `Use this template` button, and select - `Create a new respository` - putting in the exact name - `aws-bootcamp-cruddur-2023`, check - `Public`, and then Click - `Create repository from this template.`
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Create_repository_aws-bootcamp-cruddur-2023.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Create_repository_aws-bootcamp-cruddur-2023.pdf)
 
 Once the repository was created, I could see all of the template folders/files available in the repository.
 
@@ -56,7 +55,7 @@ As I already have one, I did not create another Account.
 
 - Set AWS CLI to use `partial autoprompt` mode to make it easier to debug CLI commands.
 
-- [aws-bootcamp-cruddur-2023/.gitpod.yml](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/.gitpod.yml)
+- [aws-bootcamp-cruddur-2023/.gitpod.yml](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/.gitpod.yml)
 
 ```
 tasks:
@@ -81,7 +80,7 @@ tasks:
 
  - From [IAM Users Console](https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users),  login as a root user
 
-- Create an IAM user - `bobby`
+- Create an IAM user - `sammy`
 - `Enable Console access` for the user
 - Create a new `Admin group - admin` and `apply AdminstratorAccess`
 - `Create the user`
@@ -127,7 +126,7 @@ aws sts get-caller-identity
 {
     "UserId": "XXXXXXXXXXXXXXXXXXXXX",
     "Account": "123456789012",
-    "Arn": "arn:aws:iam::123456789012:user/bobby"
+    "Arn": "arn:aws:iam::123456789012:user/sammy"
 }
 ```
 
@@ -174,8 +173,6 @@ aws sns list-topics
 }
 ```
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Billing_alarm_ARN.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Billing_alarm_ARN.pdf)
-
 
 - Create a SNS subscription and associate the above ARN and the email where you want the alert.
 
@@ -195,13 +192,13 @@ aws sns subscribe \
 
 - [Create an Alarm via AWS CLI](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-estimatedcharges-alarm/)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Billing_alarm_ARN.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_setup_Billing_Alarms.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Billing_alarm_ARN.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_setup_Billing_Alarms.pdf)
 
 ```
 aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.json
 ```
 
-- [aws-bootcamp-cruddur-2023/aws/json/alarm-config.json](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/aws/json/alarm-config.json)
+- [aws-bootcamp-cruddur-2023/aws/json/alarm-config.json](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/aws/json/alarm-config.json)
 
 ## 13. Create an AWS Budget
 
@@ -220,11 +217,11 @@ aws sts get-caller-identity --query Account --output text
 - Update the json files with email address
 
 
-- [aws-bootcamp-cruddur-2023/aws/json/budget.json](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/aws/json/budget.json)
+- [aws-bootcamp-cruddur-2023/aws/json/budget.json](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/aws/json/budget.json)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_setup_Monthly_Budget.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_setup_Monthly_Budget.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_setup_Monthly_Budget.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_setup_Monthly_Budget.pdf)
 
-- [aws-bootcamp-cruddur-2023/aws/json/budget-notifications-with-subscribers.json](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/aws/json/budget-notifications-with-subscribers.json)
+- [aws-bootcamp-cruddur-2023/aws/json/budget-notifications-with-subscribers.json](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/aws/json/budget-notifications-with-subscribers.json)
 
 
 ```
@@ -239,17 +236,17 @@ aws budgets create-budget \
 
 ## Set MFA, IAM role
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_user_bobby_setup_MFA](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_user_bobby_setup_MFA.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_user_bobby_setup_MFA](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_user_sammy_setup_MFA.pdf)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Role_S3Full.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Role_S3Full.pdf)
+
 
 ## Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
 
 Follow [Monitoring Amazon Health events with Amazon EventBridge](https://docs.amazonaws.cn/en_us/health/latest/ug/cloudwatch-events-health.html)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_Health-rule-notify-1.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_Health-rule-notify-1.pdf)
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_EC2_health-2.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_EC2_health-2.pdf)
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_SNS_topic-3.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_SNS_topic-3.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_Health-rule-notify-1.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_Health-rule-notify-1.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_EC2_health-2.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_EC2_health-2.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_SNS_topic-3.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_SNS_topic-3.pdf)
 
 ## Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
 
@@ -259,7 +256,7 @@ Follow [Monitoring Amazon Health events with Amazon EventBridge](https://docs.am
 
 - Created a workload **week_0_project** to do this task in getting the report for my project using the **Logical CI/CD pipeline Diagram**
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Well_Architeched_Tool_report.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Well_Architeched_Tool_report.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Well_Architeched_Tool_report.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Well_Architeched_Tool_report.pdf)
 
 
 ## Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
@@ -268,11 +265,11 @@ Follow [Monitoring Amazon Health events with Amazon EventBridge](https://docs.am
 
 Link to my Logical Diagram from Lucid Chart
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png](https://lucid.app/lucidchart/61cf470e-1feb-42c5-afdb-792fb1e4fb85/view?page=0_0&invitationId=inv_4088e3a2-9db3-4c69-951d-5895298985bc#)
+    ![](journal\assets\week_0_Logical_Architectural_Diagram_Lucidchart.png)
 
 - Link to my Logical Diagram PDF file
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical diagram.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Logical%20diagram.pdf)
+    ![](/assets/week_0_Logical diagram.pdf)
 
 ### 2. Coceptual Diagram + Conceptual Diagram on Napkin
 
@@ -283,11 +280,11 @@ Link to my Logical Diagram from Lucid Chart
 
 - Link to my Conceptual Diagram PDF file
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual diagram.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Conceptual%20diagram.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual diagram.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Conceptual%20diagram.pdf)
 
 - Link to my Conceptual Diagram on Napkin
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual_Napkin_diagram.jpg](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Conceptual_Napkin_diagram.jpg)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Conceptual_Napkin_diagram.jpg](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Conceptual_Napkin_diagram.jpg)
 
 
 ### 3. Logical CI/CD pipeline Diagram
@@ -298,7 +295,7 @@ Link to my Logical Diagram from Lucid Chart
 
 - Link to my Logical CI/CD Diagram PDF file
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_CI_CD diagram.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Logical_CI_CD%20diagram.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_CI_CD diagram.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Logical_CI_CD%20diagram.pdf)
 
 ## Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility. 
 
@@ -424,13 +421,13 @@ Overall, the technical and service limits of load balancers can impact the techn
 
 Follow [Request a Quota Increase with Service Quotas](https://aws.amazon.com/getting-started/hands-on/request-service-quota-increase/)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_EC2_50.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Service_Quota_incr_EC2_50.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_EC2_50.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Service_Quota_incr_EC2_50.pdf)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_Pending.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Service_Quota_incr_Pending.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_Pending.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Service_Quota_incr_Pending.pdf)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_EC2_50_Support_ticket.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Service_Quota_incr_EC2_50_Support_ticket.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_EC2_50_Support_ticket.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Service_Quota_incr_EC2_50_Support_ticket.pdf)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_Resolved.pdf](https://github.com/awsmine/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Service_Quota_incr_Resolved.pdf)
+- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Service_Quota_incr_Resolved.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Service_Quota_incr_Resolved.pdf)
 
 
 
