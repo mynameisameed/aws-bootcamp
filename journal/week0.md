@@ -262,7 +262,7 @@ Follow [Monitoring Amazon Health events with Amazon EventBridge](https://docs.am
 
 Link to my Logical Diagram from Lucid Chart
 
-  ![Architecture image](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png)
+  ![Architecture image](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png)
 
 - Link to my Logical Diagram PDF file
 
