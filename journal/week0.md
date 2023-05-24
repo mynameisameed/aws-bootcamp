@@ -198,7 +198,7 @@ aws sns subscribe \
 aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.json
 ```
 
-- [aws-bootcamp-cruddur-2023/aws/json/alarm-config.json](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/aws/json/alarm-config.json)
+- [aws-bootcamp-cruddur-2023/aws/json/alarm-config.json](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_setup_Monthly_Budget.pdf.pdf)
 
 ## 13. Create an AWS Budget
 
