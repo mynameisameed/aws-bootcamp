@@ -1,4 +1,6 @@
 # Week 1 — App Containerization
+## Docker Architecture
+![Architecture image](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/docker-architecture-609x270.webp)
 ### Follow the instructions for setting up Docker
 ## References
 
