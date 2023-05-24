@@ -1,5 +1,5 @@
 # Week 1 — App Containerization
-
+### Follow the instructions for setting up Docker
 ## References
 
 Good Article for Debugging Connection Refused
