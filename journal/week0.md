@@ -192,7 +192,7 @@ aws sns subscribe \
 
 - [Create an Alarm via AWS CLI](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-estimatedcharges-alarm/)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Billing_alarm_ARN.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_setup_Billing_Alarms.pdf)
+- ![Architecture image](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_setup_Billing_Alarms.pdf)
 
 ```
 aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.json
