@@ -244,9 +244,6 @@ aws budgets create-budget \
 
 Follow [Monitoring Amazon Health events with Amazon EventBridge](https://docs.amazonaws.cn/en_us/health/latest/ug/cloudwatch-events-health.html)
 
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_Health-rule-notify-1.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_Health-rule-notify-1.pdf)
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_EC2_health-2.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_EC2_health-2.pdf)
-- [aws-bootcamp-cruddur-2023/journal/assets/week_0_Eventbridge_SNS_topic-3.pdf](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week_0_Eventbridge_SNS_topic-3.pdf)
 
 ## Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
 
@@ -265,7 +262,7 @@ Follow [Monitoring Amazon Health events with Amazon EventBridge](https://docs.am
 
 Link to my Logical Diagram from Lucid Chart
 
-    ![](journal\assets\week_0_Logical_Architectural_Diagram_Lucidchart.png)
+  ![Architecture image](https://github.com/mynameisameed/aws-bootcamp-cruddur-2023/journal/assets/week_0_Logical_Architectural_Diagram_Lucidchart.png)
 
 - Link to my Logical Diagram PDF file
 
