@@ -298,3 +298,6 @@ volumes:
   db:
     driver: local
 ```
+
+####Faced alot of issues in-between but finally got my backend and front end working
+![Architecture image](
