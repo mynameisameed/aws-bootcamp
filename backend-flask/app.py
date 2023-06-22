@@ -2,6 +2,7 @@ from flask import Flask
 from flask import request
 from flask_cors import CORS, cross_origin
 import os
+import sys
 from services.home_activities import *
 from services.notifications_activities import *
 from services.user_activities import *
@@ -79,8 +80,8 @@ origins = [frontend, backend]
 cors = CORS(
   app, 
   resources={r"/api/*": {"origins": origins}},
-  expose_headers="location,link",
-  allow_headers="content-type,if-modified-since",
+  headers=['Content-Type', 'Authorization'], 
+  expose_headers='Authorization',
   methods="OPTIONS,GET,HEAD,POST"
 )
 # CloudWatch -------------
@@ -97,14 +98,14 @@ with app.app_context():
   def init_rollbar():
       """init rollbar module"""
       rollbar.init(
-          # access token
-          '75c5706913864f498bba4a811147c00d',
-          # environment name
-          'production',
-          # server root directory, makes tracebacks prettier
-          root=os.path.dirname(os.path.realpath(__file__)),
-          # flask already sets up logging
-          allow_logging_basic_config=False)
+        # access token
+        '75c5706913864f498bba4a811147c00d',
+        # environment name
+        'production',
+        # server root directory, makes tracebacks prettier
+        root=os.path.dirname(os.path.realpath(__file__)),
+        # flask already sets up logging
+        allow_logging_basic_config=False)
 
       # send exceptions from `app` to rollbar, using flask's signal system.
       got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
@@ -150,7 +151,12 @@ def data_create_message():
   return
 
 @app.route("/api/activities/home", methods=['GET'])
+@xray_recorder.capture('activites_home')
 def data_home():
+  print('AUTH HEADER----', file=sys.stdout)
+  print(
+      request.headers.get('Authorization')
+  )
   data = HomeActivities.run()
   return data, 200
 
