@@ -24,20 +24,12 @@ export default function RecoverPage() {
   const onsubmit_confirm_code = async (event) => {
     event.preventDefault();
     setErrors('')
-<<<<<<< HEAD
     if (password == passwordAgain){
-=======
-    if (password === passwordAgain){
->>>>>>> c1059d6d141f2717cddec1261c31a363343698ee
       Auth.forgotPasswordSubmit(username, code, password)
       .then((data) => setFormState('success'))
       .catch((err) => setErrors(err.message) );
     } else {
-<<<<<<< HEAD
-      setCognitoErrors('Passwords do not match')
-=======
       setErrors('Passwords do not match')
->>>>>>> c1059d6d141f2717cddec1261c31a363343698ee
     }
     return false
   }
@@ -134,13 +126,13 @@ export default function RecoverPage() {
     }
 
   let form;
-  if (formState === 'send_code') {
+  if (formState == 'send_code') {
     form = send_code()
   }
-  else if (formState === 'confirm_code') {
+  else if (formState == 'confirm_code') {
     form = confirm_code()
   }
-  else if (formState === 'success') {
+  else if (formState == 'success') {
     form = success()
   }
 

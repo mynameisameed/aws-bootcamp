@@ -2,7 +2,7 @@
 
 # awscli
 cd /workspaces/aws-bootcamp-cruddur-2023/ 
-sudo apt install -y
+sudo apt install awscli -y
 
 # npm install  frontend
 cd /workspaces/aws-bootcamp-cruddur-2023/frontend-react-js && npm update -g && npm i;
