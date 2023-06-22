@@ -12,19 +12,21 @@
 		"vscode": {
 			"extensions": [
 				"ms-azuretools.vscode-docker",
+				"42Crunch.vscode-openapi",
 				"ms-python.python",
-				"vscodevim.vim"
-			],
-			"settings": {
-				"terminal.integrated.fontSize": 20,
-				"editor.fontSize": 20,
-				"workbench.colorTheme": "Default Dark+ Experimental"
-			}
-		}
+				"vscodevim.vim",
+				"cweijan.vscode-postgresql-client2",
+				"GitHub.codespaces"
+
+			]
+
 		
+		}
+	},
+	"postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
 
 
-	}
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
