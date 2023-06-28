@@ -38,10 +38,17 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+# CLI docs generation
+doc/source/aws_man_pages.json
+doc/source/reference
+doc/source/topic
+doc/source/tutorial/services.rst
+
 # Dependency directories
 node_modules/
 jspm_packages/
-
+.aws/
+aws/
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
