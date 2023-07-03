@@ -7,14 +7,14 @@ nav {
 nav .logo {
   width: 48px;
   height: 48px;
-  fill: rgb(149,0,255);
+  fill: rgb(156, 15, 38);
 }
 
 nav a.primary {
   display: flex;
   gap: 24px;
   align-items: center;
-  color: rgb(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
   text-decoration: none;
   padding: 12px 0;
