@@ -2,3 +2,9 @@ export HONEYCOMB_API_KEY="eygSYKxhQH1C7a27OP4bEA"
 export HONEYCOMB_SERVICE_NAME="Cruddur"
 gp env HONEYCOMB_API_KEY="eygSYKxhQH1C7a27OP4bEA"
 gp env HONEYCOMB_SERVICE_NAME="Cruddur"
+
+#postgres
+psql cruddur < backend-flask/db/schema.sql -h localhost -U postgres
+export CONNECTION_URL="postgresql://postgres:password@localhost:5432/cruddur"
+export PROD_CONNECTION_URL="postgresql://root:Testing1234!@cruddur-db-instance.cbrxbdsaktue.us-east-1.rds.amazonaws.com:5432/cruddur"
+gp env PROD_CONNECTION_URL="postgresql://root:Testing1234!@cruddur-db-instance.cbrxbdsaktue.us-east-1.rds.amazonaws.com:5432/cruddur"
