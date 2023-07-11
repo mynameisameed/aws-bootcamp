@@ -293,3 +293,4 @@ aws/dist/lib-dynload/select.cpython-311-x86_64-linux-gnu.so
 aws/dist/lib-dynload/termios.cpython-311-x86_64-linux-gnu.so
 aws/dist/lib-dynload/unicodedata.cpython-311-x86_64-linux-gnu.so
 aws/dist/lib-dynload/zlib.cpython-311-x86_64-linux-gnu.so
+aws-psycopg2
