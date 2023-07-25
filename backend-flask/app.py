@@ -3,6 +3,7 @@ from flask import request
 from flask_cors import CORS, cross_origin
 import os
 import sys
+
 from services.home_activities import *
 from services.notifications_activities import *
 from services.user_activities import *
@@ -35,6 +36,8 @@ import logging
 from time import strftime
 
 # Rollbar -------
+from time import strftime
+import os
 import rollbar
 import rollbar.contrib.flask
 from flask import got_request_exception
@@ -101,22 +104,22 @@ cors = CORS(
 
 # Rollbar --------------
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
-# @app.before_first_request
+#@app.before_first_request
 with app.app_context():
-    def init_rollbar():
-        """init rollbar module"""
-        rollbar.init(
-            # access token
-            '75c5706913864f498bba4a811147c00d',
-            # environment name
-            'production',
-            # server root directory, makes tracebacks prettier
-            root=os.path.dirname(os.path.realpath(__file__)),
-            # flask already sets up logging
-            allow_logging_basic_config=False)
+  def init_rollbar():
+    """init rollbar module"""
+    rollbar.init(
+    # access token
+    '75c5706913864f498bba4a811147c00d',
+    # environment name
+    'production',
+    # server root directory, makes tracebacks prettier
+    root=os.path.dirname(os.path.realpath(__file__)),
+    # flask already sets up logging
+    allow_logging_basic_config=False)
 
-        # send exceptions from `app` to rollbar, using flask's signal system.
-        got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
+    # send exceptions from `app` to rollbar, using flask's signal system.
+    got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
 
 @app.route('/rollbar/test')
 def rollbar_test():
@@ -125,7 +128,7 @@ def rollbar_test():
 
 @app.route("/api/message_groups", methods=['GET'])
 def data_message_groups():
-  user_handle  = 'sameeduddin'
+  user_handle  = request.json["user_handle"]
   model = MessageGroups.run(user_handle=user_handle)
   if model['errors'] is not None:
     return model['errors'], 422
@@ -202,8 +205,7 @@ def data_search():
 @app.route("/api/activities", methods=['POST','OPTIONS'])
 @cross_origin()
 def data_activities():
-  user_handle  = 'andrewbrown'
-  message = request.json['message']
+  user_handle  = request.json["user_handle"]
   ttl = request.json['ttl']
   model = CreateActivity.run(message, user_handle, ttl)
   if model['errors'] is not None:
@@ -220,7 +222,7 @@ def data_show_activity(activity_uuid):
 @app.route("/api/activities/<string:activity_uuid>/reply", methods=['POST','OPTIONS'])
 @cross_origin()
 def data_activities_reply(activity_uuid):
-  user_handle  = 'andrewbrown'
+  user_handle  = request.json["user_handle"]
   message = request.json['message']
   model = CreateReply.run(message, user_handle, activity_uuid)
   if model['errors'] is not None:
