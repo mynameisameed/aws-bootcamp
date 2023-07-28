@@ -5,9 +5,7 @@ NO_COLOR='\033[0m'
 LABEL="db-seed"
 printf "${CYAN}== ${LABEL}${NO_COLOR}\n"
 
-
 seed_path="$(realpath .)/db/seed.sql"
-
 echo $seed_path
 
 if [ "$1" = "prod" ]; then
@@ -16,4 +14,5 @@ if [ "$1" = "prod" ]; then
 else
   URL=$CONNECTION_URL
 fi
-psql $CONNECTION_URL cruddur < $seed_path
+
+psql $URL cruddur < $seed_path

@@ -10,8 +10,8 @@ export default function ActivityForm(props) {
 
   const classes = []
   classes.push('count')
-  if (240-count < 0){
-    classes.push('err')
+    if (240-count < 0){
+  classes.push('err')
   }
 
   const onsubmit = async (event) => {
@@ -25,10 +25,11 @@ export default function ActivityForm(props) {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-      body: JSON.stringify({
-        user_handle: props.user_handle.handle,
-        message: message,
-        ttl: ttl
+        body: JSON.stringify({
+          user_handle: props.
+          user_handle.handle,
+          message: message,
+          ttl: ttl
         }),
       });
       let data = await res.json();
@@ -44,7 +45,7 @@ export default function ActivityForm(props) {
         console.log(res)
       }
     } catch (err) {
-      console.log(err);
+        console.log(err);
     }
   }
 
