@@ -9,6 +9,10 @@ export LOCAL_CONNECTION_URL="postgresql://postgres:password@localhost:5432/crudd
 export PROD_CONNECTION_URL="postgresql://root:dbPassword123@cruddur-db-instance.cbrxbdsaktue.us-east-1.rds.amazonaws.com:5432/cruddur"
 gp env PROD_CONNECTION_URL="postgresql://root:dbPassword123@cruddur-db-instance.cbrxbdsaktue.us-east-1.rds.amazonaws.com:5432/cruddur"
 
+export AWS_COGNITO_USER_POOL_ID=us-east-1_7ElpaGPwx
+gp env AWS_COGNITO_USER_POOL_ID=us-east-1_7ElpaGPwx
+
+
 
 export DB_SG_ID="sg-048279ef8d437dc8a"
 gp env DB_SG_ID="sg-048279ef8d437dc8a"
