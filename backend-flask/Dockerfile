@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM 870583203893.dkr.ecr.us-east-1.amazonaws.com/cruddur-python:3.10-slim-buster
 
 
 # Inside Container
@@ -21,7 +21,7 @@ COPY . .
 
 # Set Enviroment Variables (Env Vars)
 # Inside Container and wil remain set when the container is running
-ENV FLASK_ENV=development
+ENV FLASK_DEBUG=1
 
 EXPOSE ${PORT}
 
