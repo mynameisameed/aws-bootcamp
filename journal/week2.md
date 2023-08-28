@@ -208,8 +208,8 @@ AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
 
  If there is no result
  ```
-export AWS_REGION="ca-central-1"
-gp env AWS_REGION="ca-central-1"
+export AWS_REGION="us-east-1"
+gp env AWS_REGION="us-east-1"
 
  ```
 
