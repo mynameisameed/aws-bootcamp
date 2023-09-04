@@ -40,7 +40,7 @@ aws ecs execute-command  \
 
 
 docker build \
---build-arg REACT_APP_BACKEND_URL="https://4567-$GITPOD_WORKSPACE_ID.$GITPOD_WORKSPACE_CLUSTER_HOST" \
+--build-arg REACT_APP_BACKEND_URL="http://cruddur-alb-1246194224.us-east-1.elb.amazonaws.com:4567" \
 --build-arg REACT_APP_AWS_PROJECT_REGION="$AWS_DEFAULT_REGION" \
 --build-arg REACT_APP_AWS_COGNITO_REGION="$AWS_DEFAULT_REGION" \
 --build-arg REACT_APP_AWS_USER_POOLS_ID="us-east-1_7ElpaGPwx" \
@@ -48,3 +48,13 @@ docker build \
 -t frontend-react-js \
 -f Dockerfile.prod \
 .
+
+    "loadBalancers": [
+      {
+          "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:870583203893:targetgroup/cruddur-frontend-react-js/59f9e920401cb5dd",
+          "containerName": "frontend-react-js",
+          "containerPort": 3000
+      }
+  ],
+
+./bin/ecs/connect-to-service 3ae7d5207cf84361ae0446f60af6837a446f60af6837a frontend-react-js
