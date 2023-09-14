@@ -1,5 +1,9 @@
 FROM 870583203893.dkr.ecr.us-east-1.amazonaws.com/cruddur-python:3.10-slim-buster
 
+# For Debugging
+RUN apt-get update -y
+RUN apt-get install iputils-ping -y
+#----
 
 # Inside Container
 # make a new folder inside container
@@ -12,6 +16,7 @@ COPY requirements.txt requirements.txt
 # Inside Container
 # Install the python libraries used for the app
 RUN pip3 install -r requirements.txt
+
 
 # Outside Container -> Inside Container
 # . means everything in the current directory
