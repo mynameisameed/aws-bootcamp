@@ -43,7 +43,7 @@ Application Side- Security Best Practice
 
 # Security of website using route 53
 
-Let's understand what is the website: it is an application exposed using a custom domain. (An example is www.facebook.com) 
+Let's understand what is the website: it is an application exposed using a custom domain.
 
 AWS Security Best Practice (Route 53)
 - Integration With Amazon Certificate Manager for TLS
